@@ -1,0 +1,25 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Background.cs">
+    <Files>
+      <File FileName="Assets/Scripts/ScoreGUI.cs" Line="15" Column="20" />
+      <File FileName="Assets/Scripts/Score.cs" Line="24" Column="19" />
+      <File FileName="Assets/Scripts/Spaceship.cs" Line="18" Column="14" />
+      <File FileName="Assets/Scripts/SceneChanger.cs" Line="10" Column="26" />
+      <File FileName="Assets/Scripts/Player.cs" Line="19" Column="3" />
+      <File FileName="Assets/Scripts/Explosion.cs" Line="5" Column="2" />
+      <File FileName="Assets/Scripts/Enemy.cs" Line="13" Column="17" />
+      <File FileName="Assets/Scripts/Background.cs" Line="9" Column="9" />
+      <File FileName="Assets/Scripts/Bullet.cs" Line="5" Column="2" />
+      <File FileName="Assets/Scripts/DestroyErea.cs" Line="7" Column="2" />
+      <File FileName="Assets/Scripts/EnemyManager.cs" Line="33" Column="11" />
+      <File FileName="Assets/Scripts/StageManager.cs" Line="6" Column="2" />
+      <File FileName="Assets/Scripts/Stage.cs" Line="27" Column="11" />
+      <File FileName="Assets/Scripts/StageGUI.cs" Line="22" Column="10" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

@@ -1,0 +1,8 @@
+/Users/nohara/ShootingGame/Temp/bin/Debug/UnityEngine.dll
+/Users/nohara/ShootingGame/Temp/bin/Debug/UnityEditor.dll
+/Users/nohara/ShootingGame/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/nohara/ShootingGame/Temp/bin/Debug/Mono.Cecil.dll
+/Users/nohara/ShootingGame/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/nohara/ShootingGame/Temp/bin/Debug/Unity.DataContract.dll
+/Users/nohara/ShootingGame/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/nohara/ShootingGame/Temp/bin/Debug/Unity.CecilTools.dll
