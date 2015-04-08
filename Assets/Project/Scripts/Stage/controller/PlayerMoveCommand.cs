@@ -20,8 +20,8 @@ namespace nohara.samplegame
 		
 		private void SetModelData() {
 			float[] addMove = (float[])evt.data;
-			model.addPositionZ = addMove[0];
-			model.addRotationY += addMove[1];
+			model.speed += addMove[0];
+			model.direction += addMove[1];
 			dispatcher.Dispatch(StageEvent.PLAYER_MOVE, model);
 		}
 	}

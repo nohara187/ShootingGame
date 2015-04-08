@@ -16,25 +16,25 @@ namespace nohara.samplegame
 			GameObject player = GameObject.FindGameObjectWithTag("Player");
 			
 			InputDetector inputs = player.GetComponent<InputDetector>() as InputDetector;
-			inputs.dispatcher.AddListener(InputDetector.MOVE, onMoveRequest);
+			inputs.dispatcher.AddListener(InputDetector.MOVE, OnMoveRequest);
 		}
 
-		internal void onMoveRequest(IEvent evt) {
-			UnityEngine.Debug.Log("call StageView.onMoveRequest()");
+		internal void OnMoveRequest(IEvent evt) {
+			UnityEngine.Debug.Log("call StageView.OnMoveRequest()");
 
 			float[] addPosition = (float[])evt.data;
 			dispatcher.Dispatch(StageEvent.REQUEST_PLAYER_MOVE, addPosition);
 		}
 
-		internal void updatePlayerPosition(ICarModel model) {
-			UnityEngine.Debug.Log("call StageView.updatePlayerPosition()");
+		internal void UpdatePlayerPosition(ICarModel model) {
+			UnityEngine.Debug.Log("call StageView.UpdatePlayerPosition()");
 
 			GameObject player = GameObject.FindGameObjectWithTag("Player");
 
-			player.transform.localRotation = Quaternion.Euler(0, model.addRotationY, 0);
+			player.transform.localRotation = Quaternion.Euler(0, model.direction, 0);
 
 			Vector3 addPosition = Vector3.zero;
-			addPosition.z = model.addPositionZ;
+			addPosition.z = model.speed;
 			player.transform.localPosition += player.transform.localRotation * addPosition;
 
 		}

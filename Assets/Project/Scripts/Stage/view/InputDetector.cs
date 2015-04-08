@@ -8,22 +8,24 @@ namespace nohara.samplegame
 
 		public const string MOVE = "MOVE";
 
-		public float speed = 2.0f;
+		public float addSpeed = 0.01f;
 
 		void Update() {
 
-			float addPositionZ = Input.GetAxis("Vertical") * speed;
+			float speed = 0;
+			float direction = 0;
 
-			float addRotationY = 0;
 			if (Input.GetKey(KeyCode.RightArrow)) {
-				addRotationY = 2;
+				direction = 2;
 			} else if(Input.GetKey(KeyCode.LeftArrow)) {
-				addRotationY = -2;
+				direction = -2;
+			} else if(Input.GetKey(KeyCode.UpArrow)) {
+				speed = addSpeed;
+			} else if(Input.GetKey(KeyCode.DownArrow)) {
+				speed = -addSpeed;
 			}
 
-			if (addPositionZ != 0 || addRotationY != 0) {
-				dispatcher.Dispatch(MOVE, new float[]{addPositionZ, addRotationY});
-			}
+			dispatcher.Dispatch(MOVE, new float[]{speed, direction});
 		}
 	}
 }

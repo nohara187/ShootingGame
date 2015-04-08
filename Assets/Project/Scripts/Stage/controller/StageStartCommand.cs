@@ -16,12 +16,12 @@ namespace nohara.samplegame
 
 		public override void Execute() {
 			UnityEngine.Debug.Log("call StageStartCommand.Execute()");
-			InitializeModel();
+			InitializeModelData();
 		}
 
-		private void InitializeModel() {
-			model.addPositionZ = 0;
-			model.addRotationY = 0;
+		private void InitializeModelData() {
+			model.speed = 0;
+			model.direction = 4;
 			dispatcher.Dispatch(StageEvent.PLAYER_MOVE, model);
 		}
 	}

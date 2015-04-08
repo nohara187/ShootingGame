@@ -15,10 +15,10 @@ namespace nohara.samplegame
 			UnityEngine.Debug.Log("call StageMediator.OnRegister()");
 
 			// Mediator -> command
-			view.dispatcher.AddListener(StageEvent.REQUEST_PLAYER_MOVE, onRequestMove);
+			view.dispatcher.AddListener(StageEvent.REQUEST_PLAYER_MOVE, OnRequestMove);
 
 			// Mediator -> View
-			dispatcher.AddListener(StageEvent.PLAYER_MOVE, onPlayerMove);
+			dispatcher.AddListener(StageEvent.PLAYER_MOVE, OnPlayerMove);
 
 			view.init();
 		}
@@ -30,18 +30,18 @@ namespace nohara.samplegame
 		}
 
 		// Mediator -> Command
-		private void onRequestMove(IEvent evt)
+		private void OnRequestMove(IEvent evt)
 		{
-			UnityEngine.Debug.Log("call StageMediator.onRequestMove()");
+			UnityEngine.Debug.Log("call StageMediator.OnRequestMove()");
 			dispatcher.Dispatch(StageEvent.REQUEST_PLAYER_MOVE, evt.data);
 		}
 
 		// Mediator -> View
-		private void onPlayerMove(IEvent evt)
+		private void OnPlayerMove(IEvent evt)
 		{
-			UnityEngine.Debug.Log("call StageMediator.onPlayerMove()");
+			UnityEngine.Debug.Log("call StageMediator.OnPlayerMove()");
 			ICarModel model = (ICarModel)evt.data;
-			view.updatePlayerPosition(model);
+			view.UpdatePlayerPosition(model);
 		}
 	}
 }

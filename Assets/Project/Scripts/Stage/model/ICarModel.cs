@@ -5,7 +5,7 @@ namespace nohara.samplegame
 {
 	public interface ICarModel
 	{
-		float addPositionZ {get; set;}
-		float addRotationY {get; set;}
+		float speed {get; set;}
+		float direction {get; set;}
 	}
 }
