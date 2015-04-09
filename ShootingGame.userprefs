@@ -1,0 +1,28 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Project/Scripts/Label/view/LabelMediator.cs">
+    <Files>
+      <File FileName="Assets/Project/Scripts/Label/view/LabelMediator.cs" Line="26" Column="38" />
+      <File FileName="Assets/Project/Scripts/Player/model/ICarModel.cs" Line="1" Column="1" />
+      <File FileName="Assets/Project/Scripts/Label/model/ILabelData.cs" Line="8" Column="7" />
+      <File FileName="Assets/Project/Scripts/Player/model/CarModel.cs" Line="7" Column="33" />
+      <File FileName="Assets/Project/Scripts/Label/model/LabelData.cs" Line="2" Column="13" />
+      <File FileName="Assets/Project/Scripts/Label/controller/SpeedMeterUpdateCommand.cs" Line="26" Column="33" />
+      <File FileName="Assets/Project/Scripts/Label/controller/CheckPointUpdateCommand.cs" Line="16" Column="35" />
+      <File FileName="Assets/Project/Scripts/Label/controller/TimerUpdateCommand.cs" Line="8" Column="33" />
+      <File FileName="Assets/Project/Scripts/Application/ApplicationContext.cs" Line="34" Column="94" />
+      <File FileName="Assets/Project/Scripts/Application/ApplicationEvent.cs" Line="10" Column="49" />
+      <File FileName="Assets/Project/Scripts/Player/view/PlayerView.cs" Line="26" Column="63" />
+      <File FileName="Assets/Project/Scripts/Player/controller/PlayerMoveCommand.cs" Line="22" Column="1" />
+      <File FileName="Assets/Project/Scripts/Application/controller/ApplicationStartCommand.cs" Line="36" Column="61" />
+      <File FileName="Assets/ThirdParty/StrangeIoC/scripts/strange/extensions/mediation/impl/EventMediator.cs" Line="30" Column="39" />
+      <File FileName="Assets/ThirdParty/StrangeIoC/scripts/strange/extensions/mediation/impl/Mediator.cs" Line="31" Column="2" />
+      <File FileName="Assets/ThirdParty/StrangeIoC/scripts/strange/extensions/dispatcher/eventdispatcher/impl/EventDispatcher.cs" Line="207" Column="1" />
+      <File FileName="Assets/Project/Scripts/Application/ApplicationRoot.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

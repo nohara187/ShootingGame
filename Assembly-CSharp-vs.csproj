@@ -46,16 +46,23 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Project\Scripts\Stage\StageContext.cs" />
-     <Compile Include="Assets\Project\Scripts\Stage\StageRoot.cs" />
-     <Compile Include="Assets\Project\Scripts\Stage\controller\PlayerMoveCommand.cs" />
-     <Compile Include="Assets\Project\Scripts\Stage\controller\StageEvent.cs" />
-     <Compile Include="Assets\Project\Scripts\Stage\controller\StageStartCommand.cs" />
-     <Compile Include="Assets\Project\Scripts\Stage\model\CarModel.cs" />
-     <Compile Include="Assets\Project\Scripts\Stage\model\ICarModel.cs" />
-     <Compile Include="Assets\Project\Scripts\Stage\view\InputDetector.cs" />
-     <Compile Include="Assets\Project\Scripts\Stage\view\StageMediator.cs" />
-     <Compile Include="Assets\Project\Scripts\Stage\view\StageView.cs" />
+     <Compile Include="Assets\Project\Scripts\Application\ApplicationContext.cs" />
+     <Compile Include="Assets\Project\Scripts\Application\ApplicationEvent.cs" />
+     <Compile Include="Assets\Project\Scripts\Application\ApplicationRoot.cs" />
+     <Compile Include="Assets\Project\Scripts\Application\controller\ApplicationStartCommand.cs" />
+     <Compile Include="Assets\Project\Scripts\Label\controller\CheckPointUpdateCommand.cs" />
+     <Compile Include="Assets\Project\Scripts\Label\controller\SpeedMeterUpdateCommand.cs" />
+     <Compile Include="Assets\Project\Scripts\Label\controller\TimerUpdateCommand.cs" />
+     <Compile Include="Assets\Project\Scripts\Label\model\ILabelData.cs" />
+     <Compile Include="Assets\Project\Scripts\Label\model\LabelData.cs" />
+     <Compile Include="Assets\Project\Scripts\Label\view\LabelMediator.cs" />
+     <Compile Include="Assets\Project\Scripts\Label\view\LabelView.cs" />
+     <Compile Include="Assets\Project\Scripts\Player\controller\PlayerMoveCommand.cs" />
+     <Compile Include="Assets\Project\Scripts\Player\model\CarModel.cs" />
+     <Compile Include="Assets\Project\Scripts\Player\model\ICarModel.cs" />
+     <Compile Include="Assets\Project\Scripts\Player\view\InputDetector.cs" />
+     <Compile Include="Assets\Project\Scripts\Player\view\PlayerMediator.cs" />
+     <Compile Include="Assets\Project\Scripts\Player\view\PlayerView.cs" />
      <Compile Include="Assets\ThirdParty\StrangeIoC\scripts\strange\ReadMe.cs" />
      <Compile Include="Assets\ThirdParty\StrangeIoC\scripts\strange\extensions\command\api\CommandExceptionType.cs" />
      <Compile Include="Assets\ThirdParty\StrangeIoC\scripts\strange\extensions\command\api\CommandKeys.cs" />
