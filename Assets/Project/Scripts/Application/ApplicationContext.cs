@@ -29,9 +29,9 @@ namespace nohara.samplegame
 
 			// Mediator -> Command
 			commandBinder.Bind(ApplicationEvent.REQUEST_PLAYER_MOVE).To<PlayerMoveCommand>();
-			commandBinder.Bind(ApplicationEvent.REQUEST_LABEL_UPDATE_SPEED).To<SpeedMeterUpdateCommand>();
-			commandBinder.Bind(ApplicationEvent.REQUEST_LABEL_UPDATE_TIMER).To<TimerUpdateCommand>();
-			commandBinder.Bind(ApplicationEvent.REQUEST_LABEL_UPDATE_POINT).To<CheckPointUpdateCommand>();
+			commandBinder.Bind(ApplicationEvent.REQUEST_UPDATE_SPEED).To<SpeedMeterUpdateCommand>();
+			commandBinder.Bind(ApplicationEvent.REQUEST_UPDATE_TIMER).To<TimerUpdateCommand>();
+			commandBinder.Bind(ApplicationEvent.REQUEST_UPDATE_POINT).To<CheckPointUpdateCommand>();
 			commandBinder.Bind(ContextEvent.START).To<ApplicationStartCommand>().Once ();
 		}
 	}

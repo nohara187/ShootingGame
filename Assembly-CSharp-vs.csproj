@@ -50,6 +50,7 @@
      <Compile Include="Assets\Project\Scripts\Application\ApplicationEvent.cs" />
      <Compile Include="Assets\Project\Scripts\Application\ApplicationRoot.cs" />
      <Compile Include="Assets\Project\Scripts\Application\controller\ApplicationStartCommand.cs" />
+     <Compile Include="Assets\Project\Scripts\Application\view\SceneChenge.cs" />
      <Compile Include="Assets\Project\Scripts\Label\controller\CheckPointUpdateCommand.cs" />
      <Compile Include="Assets\Project\Scripts\Label\controller\SpeedMeterUpdateCommand.cs" />
      <Compile Include="Assets\Project\Scripts\Label\controller\TimerUpdateCommand.cs" />

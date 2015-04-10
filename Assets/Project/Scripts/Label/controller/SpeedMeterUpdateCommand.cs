@@ -18,12 +18,11 @@ namespace nohara.samplegame
 		
 		public override void Execute() {
 			SetSpeedMeter();
-			UnityEngine.Debug.Log((int)model.speed * 1000);
 			dispatcher.Dispatch(ApplicationEvent.LABEL_DISPLAY, label);
 		}
 
 		private void SetSpeedMeter() {
-			label.speed = (int) (model.speed * 300);
+			label.speed = (int) (model.speed * 10);
 		}
 	}
 }

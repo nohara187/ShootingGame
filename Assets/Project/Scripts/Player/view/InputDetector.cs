@@ -30,7 +30,7 @@ namespace nohara.samplegame
 
 		void OnCollisionEnter(Collision c) {
 			Destroy(c.gameObject);
-			dispatcher.Dispatch(ApplicationEvent.REQUEST_LABEL_UPDATE_POINT);
+			dispatcher.Dispatch(ApplicationEvent.REQUEST_UPDATE_POINT);
 		}
 	}
 }

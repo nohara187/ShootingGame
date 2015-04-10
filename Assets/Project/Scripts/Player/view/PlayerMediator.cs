@@ -12,7 +12,7 @@ namespace nohara.samplegame
 
 		public override void OnRegister() {
 			view.dispatcher.AddListener(ApplicationEvent.REQUEST_PLAYER_MOVE, OnRequestMove);
-			view.dispatcher.AddListener(ApplicationEvent.REQUEST_LABEL_UPDATE_POINT, OnRequestUpdatePoint);
+			view.dispatcher.AddListener(ApplicationEvent.REQUEST_UPDATE_POINT, OnRequestUpdatePoint);
 			dispatcher.AddListener(ApplicationEvent.PLAYER_MOVE, OnPlayerMove);
 			view.init();
 		}
@@ -24,12 +24,12 @@ namespace nohara.samplegame
 		private void OnRequestMove(IEvent evt)
 		{
 			dispatcher.Dispatch(ApplicationEvent.REQUEST_PLAYER_MOVE, evt.data);
-			dispatcher.Dispatch(ApplicationEvent.REQUEST_LABEL_UPDATE_SPEED);
+			dispatcher.Dispatch(ApplicationEvent.REQUEST_UPDATE_SPEED);
 		}
 
 		private void OnRequestUpdatePoint(IEvent evt)
 		{
-			dispatcher.Dispatch(ApplicationEvent.REQUEST_LABEL_UPDATE_POINT);
+			dispatcher.Dispatch(ApplicationEvent.REQUEST_UPDATE_POINT);
 		}
 
 		private void OnPlayerMove(IEvent evt)

@@ -15,13 +15,14 @@ namespace nohara.samplegame
 		}
 		
 		private void UpdateTimer() {
-			dispatcher.Dispatch(ApplicationEvent.REQUEST_LABEL_UPDATE_TIMER);
+			dispatcher.Dispatch(ApplicationEvent.REQUEST_UPDATE_TIMER);
 		}
 		
 		internal void DisplayLabels(ILabelData data) {
 			DisplaySpeedMeter(data);
 			DisplayTimer(data);
 			DisplayCheckPoint(data);
+			CheckGameClear(data);
 		}
 
 		private void DisplaySpeedMeter(ILabelData data) {
@@ -47,5 +48,10 @@ namespace nohara.samplegame
 			checkPoint.text = "残り : " + System.String.Format("{0:D2}", data.checkPoint);
 		}
 
+		private void CheckGameClear(ILabelData data) {
+			if (data.checkPoint == 0) {
+				Application.LoadLevel("Clear");
+			}
+		}
 	}
 }

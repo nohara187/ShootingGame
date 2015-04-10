@@ -18,7 +18,6 @@ namespace nohara.samplegame
 		public ILabelData label{get;set;}
 
 		public override void Execute() {
-			UnityEngine.Debug.Log("call ApplilcationStartCommand.Execute()");
 			InitializeModelData();
 			InitializeLabelData();
 		}
@@ -32,7 +31,7 @@ namespace nohara.samplegame
 		private void InitializeLabelData() {
 			label.startTime = System.DateTime.Now;
 			label.speed = 0;
-			label.checkPoint = 10;
+			label.checkPoint = 5;
 			dispatcher.Dispatch(ApplicationEvent.LABEL_DISPLAY, label);
 		}
 	}
